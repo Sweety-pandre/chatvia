@@ -1,0 +1,248 @@
+.home {
+    width: 100%;
+    height: 100vh;
+    border: 1px solid black;
+    display: flex;
+    margin: auto;
+}
+
+.chatList {
+    width: 27%;
+    border: 1px solid blue;
+}
+
+.chatBox {
+    border: 1px solid green;
+    width: 70%;
+}
+
+.nav {
+    padding: 8px;
+    background-color: #2A3457;
+    display: flex;
+    align-items: center;
+
+    .proPic {
+        width: 85%;
+        display: flex;
+        align-items: center;
+    }
+
+    .proPic img {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+
+    .proPic p {
+        margin: 5px;
+        margin-left: 10px;
+        font-weight: 400;
+    }
+
+    .logOut button {
+        padding: 4px;
+        cursor: pointer;
+        font-size: 10px;
+    }
+}
+
+.searchBar {
+
+    padding-top: 5px;
+    display: flex;
+
+    #search {
+        border: none;
+        padding: 15px;
+        margin: 10px;
+        border-bottom: 1px solid gray;
+        width: 90%;
+    }
+}
+
+.chat {
+    padding: 5px 0px 5px 17px;
+    border: none;
+    border-bottom: 1px solid gray;
+    width: 95%;
+    display: flex;
+    justify-content: left;
+}
+
+.chat:hover {
+    background-color: aliceblue;
+}
+
+.chat .userPic {
+    margin: auto 2px auto 2px;
+}
+
+.chat img {
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+}
+
+.chat .content {
+    padding: 5px;
+}
+
+.chat .userName {
+    margin: 0;
+    font-weight: 600;
+}
+
+.chat .userMsg {
+    margin: 0;
+    font-weight: lighter;
+}
+
+.chatBox .chatInfo {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .chatIcons {
+        display: flex;
+        align-items: center;
+    }
+
+    .chatIcons img {
+        height: 40px;
+        cursor: pointer;
+    }
+}
+
+.messages {
+    height: calc(100% - 115px);
+    background-color: #A4A4BF;
+    overflow-y: scroll;
+
+
+    .msg {
+        display: flex;
+        gap: 10px;
+        
+
+        .profile {
+            padding: 5px;
+        }
+
+        .profile img {
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+        }
+
+        .msgContent {
+            padding: 6px;
+
+            border-radius: 0px 15px 15px 15px;
+            margin: 7px;
+            max-width: 60%;
+            background-color: white;
+        }
+
+        .msgContent p {
+            margin: 0;
+            font-size: 15px;
+            max-width: max-content;
+        }
+
+        .msgContent span {
+            display: flex;
+            flex-direction: row-reverse;
+            color: rgb(91, 90, 90);
+            font-size: small;
+        }
+       &.owner{
+        flex-direction: row-reverse;
+       }
+         
+    }
+
+    
+}
+
+.sendArea {
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    padding-left: 15px;
+    background-color: rgb(165, 162, 162);
+    height: 50px;
+    justify-content: space-between;
+
+
+    .txt {
+        height: 80%;
+        background-color: white;
+        border: none;
+        color: white;
+        font-size: medium;
+        width: 85%;
+        border-radius: 35px;
+        padding-left: 25px;
+    }
+
+    .send {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+.sendArea .send label img {
+    height: 30px;
+    margin: 5px;
+}
+
+.sendArea .send button {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+
+    #img {
+        height: 40px;
+        margin: auto;
+    }
+}
+
+/* .msg{
+    display: flex;
+    gap: 10px;
+
+    .profile{
+        padding: 5px;
+    }
+    .profile img{
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+    }
+
+    .msgContent{
+        padding: 6px;
+        
+        border-radius: 0px 15px 15px 15px ;
+        margin: 7px;
+        max-width: 60%;
+        background-color: white;
+    }
+    .msgContent p{ 
+        margin: 0;
+        font-size: 15px;
+    }
+    .msgContent span{
+        display: flex;
+        flex-direction: row-reverse;
+        color: rgb(91, 90, 90);
+        font-size: small;
+    }
+}
+&.owner{
+    flex-direction: row-reverse;
+} */
